@@ -1,6 +1,6 @@
 ﻿//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-Console.Write("Введите число:");
+//Console.Write("Введите число:");
 int num = Convert.ToInt32(Console.ReadLine());
 
 string numtext = Convert.ToString(num);
