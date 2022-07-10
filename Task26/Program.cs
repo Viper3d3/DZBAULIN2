@@ -10,19 +10,20 @@
 
 
 //2 способ цикл!
-int multiplication(int x, int y)
-{
-   int result = 1;
-   for(int i = 0; i < y; i++)
-    { 
-   result = result * x;
-    }
-return result;
-}
+// int multiplication(int x, int y)
+// {
+//    int result = 1;
+//    for(int i = 0; i < y; i++)
+//     { 
+//    result = result * x;
+//     }
+// return result;
+// }
 
-Console.Write("Введите число которое надо возвести в степень :");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Число для возведения в степень первого :");
-int num2 = Convert.ToInt32(Console.ReadLine());
-Console.Write($"{num1}^{num2} --->[{multiplication(num1, num2)} результат]");
+// Console.Write("Введите число которое надо возвести в степень :");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Число для возведения в степень первого :");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write($"{num1}^{num2} --->[{multiplication(num1, num2)} результат]");
+
 

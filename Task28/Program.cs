@@ -4,13 +4,13 @@
 
 // 6, 1, 33 -> [6, 1, 33]
 
- int [] array = new int [9];
+ int [] array = new int [8];
  int size = array.Length;
  int i = 0;
  
  while (i < size)
  {
-    array[i] = new Random().Next(1, 19);
+    array[i] = new Random().Next(100, 999);
     array[i]+= size; 
     i++;
  }
