@@ -68,5 +68,105 @@
 // Console.WriteLine("\nМиниимальный элемент массива = {0}", min);
 // int result = max - min;
 // Console.WriteLine("\nРазность = " +result);
-// Console.ReadKey();
-        
+// Console.ReadKey()
+
+
+// Console.WriteLine("Введите первое число: ");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите степень первого числа: ");
+// int stepenNumber = Convert.ToInt32(Console.ReadLine());
+// int result = 1;
+
+// for(int i = 0; i < stepenNumber; i++)
+// {
+//       result = result * firstNumber;
+// }
+// Console.Write($"{firstNumber}*{stepenNumber} :(  {result}");
+
+
+
+
+// int [] myArray = new int[4];
+
+// for (int i = 0; i < myArray.Length; i++)
+
+// {
+
+//     Console.Write($"Введите число массива с индексом[{i}] = ");
+
+//     myArray[i] = Convert.ToInt32(Console.ReadLine());
+
+// }
+
+// int SumOddElements = 0;
+
+// for (int i = 0; i < myArray.Length; i ++)
+
+// {
+
+//   if (i%2 != 0)
+//     SumOddElements = SumOddElements + myArray [i];
+
+// }
+
+// Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях массива : {SumOddElements}");
+
+
+
+int[] myArray = new int[5];
+
+for (int i = 0; i < myArray.Length; i++)
+
+{
+
+    Console.Write($"Введите число массива с индексом[{i}] = ");
+
+    myArray[i] = Convert.ToInt32(Console.ReadLine());
+
+}
+
+uint resultPositiveNumbersM = 0; //четные числа
+
+for (int i = 0; i < myArray.Length; i++)
+
+{
+
+    if (myArray[i] > 0)
+
+        resultPositiveNumbersM++;
+
+}
+
+
+
+Console.WriteLine($"Общее количество чётных чисел в массиве: " + resultPositiveNumbersM);
+
+
+
+
+
+
+
+// Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+// b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+
+
+Console.WriteLine("Введите b1");
+double NumberFirst = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите k1");
+double NumberTwo = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите b2");
+double NumberThree = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите k2");
+double NumberFour = Convert.ToInt32(Console.ReadLine());
+
+double X = (NumberThree-NumberFirst)/(NumberTwo-NumberFour);
+double Y = NumberTwo*(NumberThree-NumberFirst)/(NumberTwo-NumberFour)+NumberFirst;
+
+Console.WriteLine(X);
+Console.WriteLine(Y);
