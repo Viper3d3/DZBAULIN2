@@ -54,7 +54,7 @@
 // [3 7 22 2 78] -> 76                         
 
 
-        
+
 // Random rand = new Random();
 // int[] arr = new int[10];
 // for (int i = 0; i < arr.Length; i++)
@@ -113,33 +113,33 @@
 
 
 
-int[] myArray = new int[5];
+// int[] myArray = new int[5];
 
-for (int i = 0; i < myArray.Length; i++)
+// for (int i = 0; i < myArray.Length; i++)
 
-{
+// {
 
-    Console.Write($"Введите число массива с индексом[{i}] = ");
+//     Console.Write($"Введите число массива с индексом[{i}] = ");
 
-    myArray[i] = Convert.ToInt32(Console.ReadLine());
+//     myArray[i] = Convert.ToInt32(Console.ReadLine());
 
-}
+// }
 
-uint resultPositiveNumbersM = 0; //четные числа
+// uint resultPositiveNumbersM = 0; //четные числа
 
-for (int i = 0; i < myArray.Length; i++)
+// for (int i = 0; i < myArray.Length; i++)
 
-{
+// {
 
-    if (myArray[i] > 0)
+//     if (myArray[i] > 0)
 
-        resultPositiveNumbersM++;
+//         resultPositiveNumbersM++;
 
-}
+// }
 
 
 
-Console.WriteLine($"Общее количество чётных чисел в массиве: " + resultPositiveNumbersM);
+
 
 
 
@@ -153,132 +153,280 @@ Console.WriteLine($"Общее количество чётных чисел в �
 
 
 
-Console.WriteLine("Введите b1");
-double NumberFirst = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите b1");
+// double NumberFirst = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите k1");
-double NumberTwo = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите k1");
+// double NumberTwo = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите b2");
-double NumberThree = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите b2");
+// double NumberThree = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите k2");
-double NumberFour = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите k2");
+// double NumberFour = Convert.ToInt32(Console.ReadLine());
 
-double X = (NumberThree-NumberFirst)/(NumberTwo-NumberFour);
-double Y = NumberTwo*(NumberThree-NumberFirst)/(NumberTwo-NumberFour)+NumberFirst;
+// double X = (NumberThree-NumberFirst)/(NumberTwo-NumberFour);
+// double Y = NumberTwo*(NumberThree-NumberFirst)/(NumberTwo-NumberFour)+NumberFirst;
 
-Console.WriteLine(X);
-Console.WriteLine(Y);
-
-
+// Console.WriteLine(X);
+// Console.WriteLine(Y);
 
 
 
-Console.Write("Введите количество строк массива: ");
-int rows = int.Parse(Console.ReadLine()); // null - ссылка в пустоту
-Console.Write("Введите количество столбцы массива: ");
-int columns = Convert.ToInt32(Console.ReadLine());
 
-/// summary - описание метода
-/// m на n: m - кол-во строк, n - кол-во столбцов
-/// minValue , maxValue
-int[,] GetArray(int m, int n, int minValue, int maxValue)
-{
-    int[,] matrix = new int[m, n];
-    for (int i = 0; i < m; i++)     // Строчки. m = matrix.GetLength(0)
-    {
-        for (int j = 0; j < n; j++) // n = matrix.GetLength(1)
-        {
-            matrix[i, j] = new Random().Next(minValue, maxValue + 1);
-        }
-    }
-    return matrix;
-}
 
-// Задайте двумерный массив.
-// Напишите программу,
-// которая поменяет местами первую и последнюю строку массива.
+// Console.Write("Введите количество строк массива: ");
+// int rows = int.Parse(Console.ReadLine()); // null - ссылка в пустоту
+// Console.Write("Введите количество столбцы массива: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите количество строк массива: ");
-int rows = int.Parse(Console.ReadLine()); // null - ссылка в пустоту
-Console.Write("Введите количество столбцы массива: ");
-int columns = Convert.ToInt32(Console.ReadLine());
+// /// summary - описание метода
+// /// m на n: m - кол-во строк, n - кол-во столбцов
+// /// minValue , maxValue
+// int[,] GetArray(int m, int n, int minValue, int maxValue)
+// {
+//     int[,] matrix = new int[m, n];
+//     for (int i = 0; i < m; i++)     // Строчки. m = matrix.GetLength(0)
+//     {
+//         for (int j = 0; j < n; j++) // n = matrix.GetLength(1)
+//         {
+//             matrix[i, j] = new Random().Next(minValue, maxValue + 1);
+//         }
+//     }
+//     return matrix;
+// }
 
-/// summary - описание метода
-/// m на n: m - кол-во строк, n - кол-во столбцов
-/// minValue , maxValue
-int[,] GetArray(int m, int n, int minValue, int maxValue)
-{
-int[,] matrix = new int[m, n];
-for (int i = 0; i < m; i++) // Строчки. m = matrix.GetLength(0)
-{
-for (int j = 0; j < n; j++) // n = matrix.GetLength(1)
-{
-matrix[i, j] = new Random().Next(minValue, maxValue + 1);
-}
-}
-return matrix;
-}
-/// Печатает массив на экран
-void PrintArray(int[,] inputArray)
-{
-for (int i = 0; i < inputArray.GetLength(0); i++)
-{
-for (int j = 0; j < inputArray.GetLength(1); j++)
-{
-Console.Write(inputArray[i, j] + "\t");
+// // Задайте двумерный массив.
+// // Напишите программу,
+// // которая поменяет местами первую и последнюю строку массива.
+
+// Console.Write("Введите количество строк массива: ");
+// int rows = int.Parse(Console.ReadLine()); // null - ссылка в пустоту
+// Console.Write("Введите количество столбцы массива: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+
+// /// summary - описание метода
+// /// m на n: m - кол-во строк, n - кол-во столбцов
+// /// minValue , maxValue
+// int[,] GetArray(int m, int n, int minValue, int maxValue)
+// {
+// int[,] matrix = new int[m, n];
+// for (int i = 0; i < m; i++) // Строчки. m = matrix.GetLength(0)
+// {
+// for (int j = 0; j < n; j++) // n = matrix.GetLength(1)
+// {
+// matrix[i, j] = new Random().Next(minValue, maxValue + 1);
+// }
+// }
+// return matrix;
+// }
+// /// Печатает массив на экран
+// void PrintArray(int[,] inputArray)
+// {
+// for (int i = 0; i < inputArray.GetLength(0); i++)
+// {
+// for (int j = 0; j < inputArray.GetLength(1); j++)
+// {
+// Console.Write(inputArray[i, j] + "\t");
+// // 1 2 3 4
+// }
+// Console.WriteLine();
+// }
+// }
+// int [,] array = GetArray(rows,columns,0,10);
+// PrintArray(array);
+
+// void ChangeRows(int [,] matrix)
+// {
+// int indexLastRow = matrix.GetLength(0) - 1;
+// for (int i = 0; i < matrix.GetLength(1); i++)
+// {
+// int temp = matrix[0,i];
+// matrix[0,i] = matrix[indexLastRow,i];
+// matrix[indexLastRow,i] = temp;
+// }
+// }
+// ChangeRows(array);
+// Console.WriteLine("Результат: ");
+// PrintArray(array);
+
+
+
+// void Inizialisazion(int[,] array)
+// {
+//     for(int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().Next(1, 11);
+//             Console.Write(array[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// void ReadMass(int[,] Array)
+// {
+//     for(int i = 0; i < Array.GetLength(0); i++)
+//     {
+//         for(int  j= 0; j < Array.GetLength(1); j++)
+//         {
+//             Console.Write(Array[j, i] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// int[,] matrix = new int[5, 5];
+
+// Inizialisazion(matrix);
+// System.Console.WriteLine();
+// ReadMass(matrix);
+
+
+
+// На оценку "5" нужно сделать минимум 4 задачи
+
+// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
+
+// Например, задан массив:
+
+// 1 4 7 2
+
+// 5 9 2 3
+
+// 8 4 2 4
+
+// В итоге получается вот такой массив:
+
+// 1 2 4 7
+
+// 2 3 5 9
+
+// 2 4 4 8
+
+// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+
+// Например, задан массив:
+
+// 1 4 7 2
+
+// 5 9 2 3
+
+// 8 4 2 4
+
+// 5 2 6 7
+
+// Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+
+// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+
+// Например, заданы 2 массива:
+
+// 1 4 7 2
+
+// 5 9 2 3
+
+// 8 4 2 4
+
+// 5 2 6 7
+
+// и
+
+// 1 5 8 5
+
+// 4 9 4 2
+
+// 7 2 2 6
+
+// 2 3 4 7
+
+// Их произведение будет равно следующему массиву:
+
+// 1 20 56 10
+
+// 20 81 8 6
+
+// 56 8 4 24
+
+// 10 6 24 49
+
+// Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+
+// массив размером 2 x 2 x 2
+
+// 12(0,0,0) 22(0,0,1)
+
+// 45(1,0,0) 53(1,0,1)
+
+// Задача 62. Заполните спирально массив 4 на 4.
+
+// Например, на выходе получается вот такой массив:
+
 // 1 2 3 4
+
+// 12 13 14 5
+
+// 11 16 15 6
+
+// 10 9 8 7
+
+
+
+
+Console.WriteLine("Введите число, которое необходимо найти в массиве: ");
+
+int findNumber = Convert.ToInt32(Console.ReadLine());
+bool tempfindNumber = false;
+bool temp = true;
+int[,] myArray = {{1,2,3,4},{12,13,14,5},{11,16,15,6},{10,9,8,7}};
+
+
+for (int i = 0; i < myArray.GetLength(0); i++)
+
+{
+
+    for (int j = 0; j < myArray.GetLength(1); j++)
+
+    {
+       
+       
+        Console.Write(myArray[i, j] + "\t");
+
+    }
+
+    Console.WriteLine();
+
+
 }
+
 Console.WriteLine();
-}
-}
-int [,] array = GetArray(rows,columns,0,10);
-PrintArray(array);
 
-void ChangeRows(int [,] matrix)
+
+
+
+for (int i = 0; i < myArray.GetLength(0); i++)
+
 {
-int indexLastRow = matrix.GetLength(0) - 1;
-for (int i = 0; i < matrix.GetLength(1); i++)
-{
-int temp = matrix[0,i];
-matrix[0,i] = matrix[indexLastRow,i];
-matrix[indexLastRow,i] = temp;
-}
-}
-ChangeRows(array);
-Console.WriteLine("Результат: ");
-PrintArray(array);
 
+    for (int j = 0; j < myArray.GetLength(1); j++)
 
-
-void Inizialisazion(int[,] array)
-{
-    for(int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().Next(1, 11);
-            Console.Write(array[i, j] + "\t");
-        }
-        Console.WriteLine();
-    }
-}
 
-void ReadMass(int[,] Array)
+
+
+        if (findNumber == myArray[i, j])
+
+        {
+
+            tempfindNumber = true;
+            break;
+        }
+else 
 {
-    for(int i = 0; i < Array.GetLength(0); i++)
-    {
-        for(int  j= 0; j < Array.GetLength(1); j++)
-        {
-            Console.Write(Array[j, i] + "\t");
-        }
-        Console.WriteLine();
-    }
+    temp = false;
 }
-
-int[,] matrix = new int[5, 5];
-
-Inizialisazion(matrix);
-System.Console.WriteLine();
-ReadMass(matrix);
+    }
+   
+}
+ Console.WriteLine(tempfindNumber);
